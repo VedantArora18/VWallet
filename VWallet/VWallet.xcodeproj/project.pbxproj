@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB0C4DBE2B978C8B00C7EE4A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0C4DBD2B978C8B00C7EE4A /* Item.swift */; };
+		CB0C4DC02B978D5100C7EE4A /* WallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0C4DBF2B978D5100C7EE4A /* WallView.swift */; };
+		CB0C4DC32B982F9500C7EE4A /* BioContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0C4DC22B982F9500C7EE4A /* BioContent.swift */; };
 		CBA13AD12B8D8A3200AAA9CB /* VWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA13AD02B8D8A3200AAA9CB /* VWalletApp.swift */; };
 		CBA13AD32B8D8A3200AAA9CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA13AD22B8D8A3200AAA9CB /* ContentView.swift */; };
 		CBA13AD52B8D8A3600AAA9CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBA13AD42B8D8A3600AAA9CB /* Assets.xcassets */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB0C4DBD2B978C8B00C7EE4A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CB0C4DBF2B978D5100C7EE4A /* WallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallView.swift; sourceTree = "<group>"; };
+		CB0C4DC22B982F9500C7EE4A /* BioContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioContent.swift; sourceTree = "<group>"; };
 		CBA13ACD2B8D8A3200AAA9CB /* VWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA13AD02B8D8A3200AAA9CB /* VWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VWalletApp.swift; sourceTree = "<group>"; };
 		CBA13AD22B8D8A3200AAA9CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +48,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB0C4DBC2B978C7600C7EE4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB0C4DBD2B978C8B00C7EE4A /* Item.swift */,
+				CB0C4DBF2B978D5100C7EE4A /* WallView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB0C4DC12B982F1400C7EE4A /* BioAuth */ = {
+			isa = PBXGroup;
+			children = (
+				CB0C4DC22B982F9500C7EE4A /* BioContent.swift */,
+			);
+			path = BioAuth;
+			sourceTree = "<group>";
+		};
 		CBA13AC42B8D8A3200AAA9CB = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +84,8 @@
 		CBA13ACF2B8D8A3200AAA9CB /* VWallet */ = {
 			isa = PBXGroup;
 			children = (
+				CB0C4DC12B982F1400C7EE4A /* BioAuth */,
+				CB0C4DBC2B978C7600C7EE4A /* Model */,
 				CBA13AD02B8D8A3200AAA9CB /* VWalletApp.swift */,
 				CBA13AE72B90367900AAA9CB /* SplashScreenView.swift */,
 				CBA13AD22B8D8A3200AAA9CB /* ContentView.swift */,
@@ -158,10 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB0C4DC32B982F9500C7EE4A /* BioContent.swift in Sources */,
 				CBA13AD32B8D8A3200AAA9CB /* ContentView.swift in Sources */,
 				CBA13AE42B8D9E9000AAA9CB /* APIKey.swift in Sources */,
 				CBA13AEA2B90398900AAA9CB /* ChatView.swift in Sources */,
 				CBA13AD12B8D8A3200AAA9CB /* VWalletApp.swift in Sources */,
+				CB0C4DC02B978D5100C7EE4A /* WallView.swift in Sources */,
+				CB0C4DBE2B978C8B00C7EE4A /* Item.swift in Sources */,
 				CBA13AE82B90367900AAA9CB /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +327,7 @@
 				DEVELOPMENT_TEAM = NYV9X5TUNK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "To unlock app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -328,6 +357,7 @@
 				DEVELOPMENT_TEAM = NYV9X5TUNK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "To unlock app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
